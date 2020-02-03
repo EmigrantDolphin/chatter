@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/index.css">
+		<script src="/index.js"></script>
+		<title>Chatter</title>
+	</head>
+	<body> 
+		<div id="registerDiv" style="display:none">
+			<form action="/action">
+				User name:<br>
+				<input id="username" type="text" name="username" value="User"><br>
+				Password:<br>
+				<input id="p1" type="password" name="password"><br>
+					Repeat password:<br>
+				<input id="p2" type="password" name="passwordRepeat"><br>
+				<button type="button" onclick="register()">Register</button><br>
+				<p id="wPass" style="display:none"> Passwords didn't match <br> </p>
+				<p id="userExists" style="display:none"> User already exists <br></p>	
+			</form>
+		</div>
+		<div id="loginDiv" style="display:block">
+			<form>
+				Username:<br>
+				<input id="loginUser" type="text"><br>
+				Password:<br>
+				<input id="loginPass" type="password"><br>
+				<button type="button" onclick="login()">Login</button>
+				<button type="button" onclick="switchToRegister()">Register</button><br>
+				<p id="badInfo" style="display:none">Username or password are incorrect</p><br>
+			</form>	
+		</div>
+	</body>
+</html>
