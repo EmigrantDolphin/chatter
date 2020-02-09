@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, "index.html"));
 });
 app.get('/mainPage', (req, res) => {
-	if (req.cookies.authToken == "temp") //TODO: get from DB instead
+	if (req.cookies.authToken == "temp") //TODO: Get from DB instead
 		res.sendFile(path.join(__dirname, "mainPage.html"));
 	else{
 		res.redirect("/");
